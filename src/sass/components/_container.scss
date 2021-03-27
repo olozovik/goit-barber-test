@@ -1,0 +1,21 @@
+.container {
+  margin: 0 auto;
+
+  @media screen and (max-width: $tablet - 1px) {
+    min-width: 320px;
+    max-width: 480px;
+    padding: 0 31px;
+  }
+
+  outline: 2px dotted gray;
+
+  @media screen and (min-width: $tablet) {
+    width: 768px;
+    padding: 0 39px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 1200px;
+    padding: 0 15px;
+  }
+}

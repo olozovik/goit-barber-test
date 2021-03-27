@@ -1,0 +1,199 @@
+.hero {
+  position: relative;
+
+  height: 580px;
+  padding-top: 208px;
+  padding-bottom: 183px;
+
+  background-image: linear-gradient(to right, $heroOverlay, $heroOverlay),
+    url(../images/hero/hero3-480.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 480px 580px;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: linear-gradient(to right, $heroOverlay, $heroOverlay),
+      url(../images/hero/hero3-480@2x.jpg);
+  }
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 274px;
+    padding-bottom: 245px;
+
+    height: 680px;
+    background-image: linear-gradient(to right, $heroOverlay, $heroOverlay),
+      url(../images/hero/hero3-768.jpg);
+    background-position: calc(50% + 80px);
+    background-size: 609px 680px;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, $heroOverlay, $heroOverlay),
+        url(../images/hero/hero3-768@2x.jpg);
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 272px;
+    padding-bottom: 206px;
+
+    background-image: linear-gradient(to right, $heroOverlay, $heroOverlay),
+      url(../images/hero/hero3-1200.jpg);
+    background-position: calc(50% + 78px);
+    background-size: 1125px 680px;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, $heroOverlay, $heroOverlay),
+        url(../images/hero/hero3-1200@2x.jpg);
+    }
+  }
+}
+
+.hero__container {
+  position: relative;
+
+  @media screen and (min-width: 768px) {
+    padding: 0 134px 0 279px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding: 0 520px 0 205px;
+  }
+}
+
+.hero__subtitle {
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 18px;
+  }
+}
+
+.hero__title {
+  margin-bottom: 20px;
+
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.167;
+  letter-spacing: 0.05em;
+
+  color: $titleLight;
+
+  @media screen and (max-width: 420px) {
+    font-size: 37px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 72px;
+    line-height: 1.181;
+    letter-spacing: 0.05em;
+  }
+}
+
+.hero__text {
+  font-size: 16px;
+  line-height: 1.625;
+  letter-spacing: 0.02em;
+
+  color: $secondTextColor;
+
+  @media screen and (max-width: 480px) {
+    width: 65%;
+  }
+
+  @media screen and (max-width: 420px) {
+    font-size: 14px;
+    line-height: 1.5;
+    width: 80%;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 18px;
+    line-height: 1.667;
+    letter-spacing: 0.02em;
+  }
+}
+
+.hero__slider-icon {
+  position: absolute;
+  display: block;
+  width: 18px;
+  height: 30px;
+
+  top: 55px;
+  right: 39px;
+
+  @media screen and (max-width: $tablet - 1px) {
+    display: none;
+  }
+
+  @media screen and (min-width: $desktop) {
+    right: 15px;
+  }
+}
+
+.slider-btns {
+  position: absolute;
+  bottom: 40px;
+  left: calc(50% + 200px);
+
+  display: flex;
+
+  @media screen and (max-width: $tablet - 1px) {
+    display: none;
+  }
+
+  @media screen and (min-width: $desktop) {
+    left: calc(50% + 440px);
+  }
+}
+
+.slider-btns__btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.364;
+  letter-spacing: 0.1em;
+
+  color: $titleColorTransp;
+
+  &:not(:last-child) {
+    margin-right: 26px;
+  }
+
+  &--forward {
+    align-items: flex-end;
+    color: $titleLight;
+  }
+}
+
+.slider-btns__btn--back::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 1px;
+  background-color: $titleColorTransp;
+  margin-top: 8px;
+}
+
+.slider-btns__btn--forward::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 1px;
+  background-color: $titleLight;
+
+  margin-top: 8px;
+}

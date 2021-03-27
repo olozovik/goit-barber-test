@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BarberShop</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <a href="./index.html" class="header__logo-link">
+          <svg class="header__logo-icon">
+            <use href="./images/icons.svg#logo"></use></svg
+        ></a>
+
+        <button type="button" class="header__menu-button" data-modal-open>
+          <svg class="header__menu-icon">
+            <use href="./images/icons.svg#menu"></use>
+          </svg>
+        </button>
+
+        <div class="nav-wrapper">
+          <div class="nav header__nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#" class="nav__link">О нас</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Услуги и цены</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Мастера</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Контакты</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="header__right">
+            <button class="order-button header__button">онлайн-запись</button>
+            <a class="header__phone" href="tel:+380441111111"
+              >+38 044 111 11 11</a
+            >
+          </div>
+
+          <ul class="header-social">
+            <li class="header-social__item">
+              <a href="https://instagram.com" class="header-social__link"
+                >Instagram</a
+              >
+            </li>
+            <li class="header-social__item">
+              <a href="https://youtube.com" class="header-social__link"
+                >Youtube</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section hero">
+        <div class="container hero__container">
+          <p class="subtitle subtitle--transparent hero__subtitle">
+            A hair salon for men in Kyiv
+          </p>
+          <h1 class="hero__title">BarberShop</h1>
+          <p class="hero__text">
+            Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и
+            со вкусом.
+          </p>
+          <svg class="hero__slider-icon">
+            <use href="./images/icons.svg#slider-mark"></use>
+          </svg>
+        </div>
+        <div class="slider-btns">
+          <button class="slider-btns__btn slider-btns__btn--back" type="button">
+            Назад
+          </button>
+          <button
+            class="slider-btns__btn slider-btns__btn--forward"
+            type="button"
+          >
+            Вперед
+          </button>
+        </div>
+      </section>
+
+      <section class="section about">
+        <div class="container">
+          <p class="subtitle about__subtitle">О НАС</p>
+          <h2 class="title about__title">Лучший Барбершоп твоего города</h2>
+          <p class="about__paragraph">
+            Если ты хочешь добавить в свой образ больше уверенности – тебе точно
+            к нам.
+          </p>
+          <p class="about__paragraph">
+            Мы команда, которая никогда не останавливается на достигнутом и
+            жаждет перемен. И когда ты попадешь в руки нашего мастера, то уже
+            никогда не сможешь быть прежним. Мы команда, которая всегда с
+            клиентами "на одной волне". Поэтому, мы всегда готовы
+            усовершенствовать каждого, кто к нам приходит!
+          </p>
+          <button
+            class="order-button order-button--dark-text about__button"
+            type="button"
+          >
+            онлайн-запись
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <div class="mobile-menu__backdrop is-hidden" data-modal>
+      <div class="mobile-menu">
+        <button class="mobile-menu__close-btn" type="button" data-modal-close>
+          <svg class="mobile-menu__icon">
+            <use href="./images/icons.svg#menu-close"></use>
+          </svg>
+        </button>
+        <nav class="mobile-nav mobile-menu__mobile-nav">
+          <ul class="mobile-nav__list">
+            <li class="mobile-nav__item">
+              <a href="#" class="mobile-nav__link">О нас</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a href="#" class="mobile-nav__link">Услуги и цены</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a href="#" class="mobile-nav__link">Мастера</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a href="#" class="mobile-nav__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="mobile-menu__contacts">
+          <a href="tel:+380441111111" class="mobile-menu__phone"
+            >+38 044 111 11 11</a
+          >
+          <button class="order-button mobile-menu__order-btn" type="button">
+            онлайн-запись
+          </button>
+        </div>
+        <div class="mobile-social__wrapper">
+          <ul class="mobile-social mobile-menu__mobile-social">
+            <li class="mobile-social__item">
+              <a href="https://instagram.com" class="mobile-social__link"
+                >Instagram</a
+              >
+            </li>
+            <li class="mobile-social__item">
+              <a href="https://youtube.com" class="mobile-social__link"
+                >Youtube</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/menu.js"></script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+.about__subtitle {
+  margin-bottom: 20px;
+}
+
+.about__title {
+  margin-bottom: 20px;
+
+  font-size: 28px;
+  line-height: 1.179;
+
+  @media screen and (max-width: $tablet - 1px) {
+    max-width: 330px;
+  }
+}
+
+.about__paragraph {
+  margin-bottom: 20px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.625;
+  letter-spacing: 0.02em;
+  color: $mainTextColor;
+
+  &:nth-last-child(2) {
+    margin-bottom: 40px;
+    font-size: 14px;
+    line-height: 1.857;
+  }
+}
