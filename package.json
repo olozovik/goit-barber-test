@@ -3,7 +3,7 @@
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://olozo.github.io/goit-barber-test",
+  "homepage": "https://olozovik.github.io/goit-barber-test",
   "scripts": {
     "dev": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /goit-barber-test/"
