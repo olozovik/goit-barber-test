@@ -147,6 +147,10 @@
   @media screen and (min-width: $desktop) {
     // margin-left: 10px;
   }
+
+  &:hover {
+    cursor: $myCursor;
+  }
 }
 
 .header__phone {
