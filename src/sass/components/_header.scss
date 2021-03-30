@@ -22,10 +22,6 @@
     align-items: flex-start;
     padding-left: 50px;
   }
-
-  @media screen and (min-width: $desktop) {
-    padding-left: 15px;
-  }
 }
 
 .header__logo-link {
@@ -187,7 +183,7 @@
   transform-origin: center right;
 
   @media screen and (min-width: $desktop) {
-    left: -225px;
+    left: -185px;
   }
 }
 

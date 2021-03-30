@@ -6,4 +6,8 @@
   @media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
     padding: 100px 0;
   }
+
+  @media screen and (min-width: $desktop) {
+    padding: 130px 0;
+  }
 }
