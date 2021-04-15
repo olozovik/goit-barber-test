@@ -21,7 +21,11 @@
 .services-tables {
   margin-bottom: 50px;
   padding: 30px;
-  background-image: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+  background-image: linear-gradient(
+    180deg,
+    #171a24 0%,
+    rgba(23, 26, 36, 0.2) 100%
+  );
 }
 
 .services-tables__left,

@@ -1,0 +1,31 @@
+@mixin tablet {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin beforeTablet {
+  @media screen and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin betweenTabDesk {
+  @media screen and (min-width: 768px) and (max-width: 1278px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: 1280px) {
+    @content;
+  }
+}
+
+@mixin backgroundResolutionX2 {
+  @media screen and (-webkit-min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    @content;
+  }
+}
